@@ -52,7 +52,7 @@ input {
 
 ::placeholder {
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 button {
@@ -137,29 +137,36 @@ img.loaded {
     }
 }
 
-/* Mobile (2 per row) */
-@media (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 651px) {
     h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .search-bar {
         flex-direction: row;
         width: 100%;
-        height: 60px;
+        height: 55px;
+        overflow: hidden;
         border-radius: 10px;
     }
 
     input {
-        padding: 0 15px;
-        font-size: 15px;
+        padding: 0 10px;
+        font-size: 14px;
         height: 100%;
+        width: 70%;
     }
 
     button {
-        padding: 0 20px;
-        font-size: 15px;
+        width: 30%;
+        padding: 0;
+        font-size: 14px;
         height: 100%;
+    }
+
+    .img-container {
+        padding: 20px 10px;
+        gap: 16px;
     }
 
     .img-container img {
@@ -169,8 +176,8 @@ img.loaded {
     }
 }
 
-/* Tablet (3 per row) */
-@media (min-width: 601px) and (max-width: 1024px) {
+
+@media (min-width: 652px) and (max-width: 1024px) {
     h1 {
         font-size: 34px;
     }
@@ -191,28 +198,14 @@ img.loaded {
         padding: 0 25px;
     }
 
+    .img-container {
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
     .img-container img {
         width: 30%;
         aspect-ratio: 1 / 1;
-    }
-}
-
-/* Laptop/Desktop */
-@media (min-width: 1025px) {
-    .search-bar {
-        height: 80px;
-    }
-
-    input {
-        font-size: 18px;
-    }
-
-    button {
-        font-size: 18px;
-    }
-
-    .img-container img {
-        width: 200px;
-        height: 200px;
+        height: auto;
     }
 }
