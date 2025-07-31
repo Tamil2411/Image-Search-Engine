@@ -165,12 +165,16 @@ img.loaded {
     }
 
     .img-container {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        justify-content: center;
+        align-items: center;
         padding: 20px 10px;
         gap: 16px;
     }
 
     .img-container img {
-        width: 48%;
+        width: 100%;
         aspect-ratio: 1 / 1;
         height: auto;
     }
